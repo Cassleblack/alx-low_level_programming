@@ -26,7 +26,6 @@ int check_num(char *str)
 	}
 	return (1);
 }
-
 /**
  * main - print the name of the program
  * @argc: counts arguments
@@ -46,7 +45,7 @@ int main(int argc, char *argv[])
 	{
 		if (check_num(argv[count]))
 		{
-			str_to_int = atoi(argv[count]); /*ATOI 	--> convert string to int*/
+			str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
 			sum += str_to_int;
 		}
 		/*Ccondition if one of the number contains symbols that are not digits*/
