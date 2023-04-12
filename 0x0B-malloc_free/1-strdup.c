@@ -7,7 +7,7 @@
  *
  * Return: pointer to the copied string (success), NULL(Error)
  */
-char *_stdup(char *str)
+char *_strdup(char *str)
 {
 	char *duplicate;
 	unsigned int i, len;
