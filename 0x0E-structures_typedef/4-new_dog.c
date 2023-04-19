@@ -52,7 +52,7 @@ char *_strcpy(char *dest, char *src)
 
 /**
  * new_dog - creates a new dog
- * @namw: name of the dog
+ * @name: name of the dog
  * @age: age of the dog
  * @owner: owner of the dog
  *
