@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * printslist - Prints all the elements of list_t list.
+ * print_list - Prints all the elements of list_t list.
  * @h: singly linked list.
  *
  * Return: number of elements in the list.
