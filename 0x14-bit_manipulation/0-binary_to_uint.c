@@ -1,4 +1,4 @@
-#include main.h"
+#include main.h
 
 /**
  * binary_to_uint - This will convert a binary number to an
@@ -26,7 +26,6 @@ unsigned int binary_to_uint(const char *b)
 		{
 			return (0);
 		}
-
 		if (b[len] & 1)
 		{
 			ui += base_two;
