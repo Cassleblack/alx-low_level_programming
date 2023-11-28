@@ -73,7 +73,7 @@ int main(int ac, char *av[])
 	}
 	if (vio)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close %d\n", pic);
+		dprintf(STDERR_FILENO, "Error: Can't close %d\n", coc);
 		exit(100);
 	}
 	return (0);
