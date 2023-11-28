@@ -3,14 +3,14 @@
 
 
 /**
- * exitandRead - This will exit the code with a certain status.
+ * exitandRead - The will exit the code with a certain status.
  * @andstatus: This is the status the code will exit with.
  * @av: An array (the arguments vectors).
  * @andfileNo: the file is numbered with this.
  *
  * Return: Null.
  */
-void exitndRead(int andstatus, char *av[], int andfileNo)
+void exitandRead(int andstatus, char *av[], int andfileNo)
 {
 	dprintf(STDERR_FILENO, "Error: Can't read from %s\n", av[andfileNo]);
 	exit(andstatus);
