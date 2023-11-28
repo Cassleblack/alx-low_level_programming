@@ -40,7 +40,7 @@ void exitandWrite(int andstatus, char *av[], int andfileNo)
  */
 int main(int ac, char *av[])
 {
-	int pic, tic, yel, ind, vio;
+	int pic, coc, yel, ind, vio;
 	char mal[1024];
 
 	if (ac != 3)
@@ -53,19 +53,19 @@ int main(int ac, char *av[])
 	if (pic == -1)
 		exitandRead(98, av, 1);
 
-	tic = open(av[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
-	if (tic == -1)
+	coc = open(av[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
+	if (coc == -1)
 		exitandWrite(99, av, 2);
 
 	while ((yel = read(pic, mal, 1024)))
 	{
 		if (yel == -1)
 			exitandRead(98, av, 1);
-		if ((write(tic, mal, yel)) == -1)
+		if ((write(coc, mal, yel)) == -1)
 			exitandWrite(99, av, 2);
 	}
 	ind = close(pic);
-	vio = close(tic);
+	vio = close(coc);
 	if (ind)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close %d\n", pic);
