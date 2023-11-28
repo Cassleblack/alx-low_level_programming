@@ -10,7 +10,7 @@
  *
  * Return: Null.
  */
-void exitandRead(int andstatus, char *av[], int andfileNo)
+void exitndRead(int andstatus, char *av[], int andfileNo)
 {
 	dprintf(STDERR_FILENO, "Error: Can't read from %s\n", av[andfileNo]);
 	exit(andstatus);
